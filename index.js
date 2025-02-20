@@ -26,6 +26,14 @@ function validatePassword(pass1, pass2){
     return hasNum && hasUpper && hasLower;
 }
 
+function reversePassword(password){
+    let reverse = '';
+    for (let i = password.length-1; i >= 0; i--){
+        reverse += password[i];
+    }
+    return reverse;
+}
+
 
 
 /*Sample outputs
