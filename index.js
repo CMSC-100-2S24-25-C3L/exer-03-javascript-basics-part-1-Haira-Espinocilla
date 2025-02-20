@@ -1,0 +1,36 @@
+function validatePassword(pass1, pass2){
+    if (pass1 !== pass2){ //to check if the two passwords are matched
+        return false;
+    }
+
+    if (pass1.length < 8){ //to check if password has at least 8 characters
+        return false;
+    }
+
+    let hasNum = false;
+    let hasUpper = false;
+    let hasLower = false;
+
+    //for checking
+    for (let i = 0; i < pass1.length; i++){
+        const char = pass1[i];
+        if (char >= '0' && char <= '9') {
+            return true;
+        } else if (char >= 'A' && char <= 'Z'){
+            return true;
+        } else if (char >= 'a' && char <= 'z'){
+            return true;
+        }
+    }
+
+    return hasNum && hasUpper && hasLower;
+}
+
+
+
+/*Sample outputs
+console.log(storePassword("John","Pass1234","Pass1234"));
+console.log(storePassword("John", "Pass123", "Pass12345"));
+*/
+
+
