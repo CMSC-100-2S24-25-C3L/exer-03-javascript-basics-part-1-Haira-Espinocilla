@@ -34,11 +34,18 @@ function reversePassword(password){
     return reverse;
 }
 
+function storePassword(name, pass1, pass2) {
+    /*an object containing user's name and new password*/
+    const newpassword = validatePassword(pass1, pass2) ? reversePassword(pass1) : pass1 //if valid, assign the reversed version. If not, assign the prev password to new password
+    return {
+        name: name,
+        newpassword: newpassword
+    };
+}
 
-
-/*Sample outputs
+/*Sample outputs*/
 console.log(storePassword("John","Pass1234","Pass1234"));
 console.log(storePassword("John", "Pass123", "Pass12345"));
-*/
+
 
 
