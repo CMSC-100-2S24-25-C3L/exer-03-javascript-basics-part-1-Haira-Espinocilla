@@ -6,6 +6,6 @@ Section: C-3L
 
 Degree Program: BS Computer Science
 
-Live Website Link: 
+Live Website Link: https://github.com/CMSC-100-2S24-25-C3L/exer-03-javascript-basics-part-1-Haira-Espinocilla.git
 
 Key Takeaways: it's like coding in Python but with different commands. 
